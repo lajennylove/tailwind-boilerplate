@@ -1,0 +1,13 @@
+// Tailwind vendor's files.
+@use "vendor/tailwind";
+
+// Tailwind's base styles.
+@use "variables";
+@use "main";
+@use "fonts";
+
+// To use Tailwind's apply directive, you need to instanciate them on the apply file.
+@use "elements/apply";
+
+// To add extra classes to the project, you can use the elements file.
+@use "elements/elements";

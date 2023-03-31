@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title -->
+    <title>Tailwind Boilerplate</title>
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js"></script>
+
+</head>
+<body>
+    
+    <header>
+        <nav x-data="{ isOpen: false }" class="bg-white shadow dark:bg-gray-900">
+            <div class="container px-6 py-4 mx-auto">
+                <div class="lg:flex lg:items-center lg:justify-between">
+                    <div class="flex items-center justify-between">
+                        <a href="#" class="mx-auto flex flex-row">
+                            <svg class="w-auto h-6 sm:h-7 pr-2" height="2434" viewBox="-.38077737 -.38186964 149.61671421 145.64193361" width="2500" xmlns="http://www.w3.org/2000/svg"><path d="m8.78 123.48 47.81-20.22 35.1 40.64a2.81 2.81 0 0 0 4.94-2l-1.83-51.43 52.2-12.59a2.82 2.82 0 0 0 .26-5.41l-52.46-18.08-1.8-51.72a2.82 2.82 0 0 0 -5-1.67l-33.49 42.78-50.83-16.28a2.82 2.82 0 0 0 -3.09 4.41l30.53 39.51-25.91 48.13a2.81 2.81 0 0 0 1.12 3.81 2.85 2.85 0 0 0 2.45.12z" fill="#1c79ad"/></svg>
+                            <div class="text-gray-700 font-extrabold text-lg capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">Tailwind CSS Boilerplate</div>
+                        </a>
+    
+                        <!-- Mobile menu button -->
+                        <div class="flex lg:hidden">
+                            <button x-cloak @click="isOpen = !isOpen" type="button" class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
+                                <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+                                </svg>
+                        
+                                <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+                    <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0">
+                        <div class="-mx-4 lg:flex lg:items-center">
+                            <a href="#" class="block mx-4 text-gray-700 capitalize dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">Web developers</a>
+                            <a href="#" class="block mx-4 mt-4 text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">Web Designers</a>
+                            <a href="#" class="block mx-4 mt-4 text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">UI/UX Designers</a>
+                            <a href="#" class="block mx-4 mt-4 text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="w-full bg-center bg-cover h-[38rem]" style="background-image: url('https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80');">
+            <div class="flex items-center justify-center w-full h-full bg-gray-900/40">
+                <div class="text-center">
+                    <h1 class="text-3xl font-semibold text-white lg:text-4xl">Build your new <span class="text-blue-400">Saas</span> Project</h1>
+                    <button class="w-full px-5 py-2 mt-4 text-sm font-medium text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">Start project</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-white dark:bg-gray-900">
+        <div class="container px-6 py-10 mx-auto">
+            <div class="flex items-center justify-between">
+                <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">recent posts </h1>
+    
+                <button class="focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600 transition-colors duration-300 transform dark:text-gray-400 hover:text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+            </div>
+    
+            <hr class="my-8 border-gray-200 dark:border-gray-700">
+    
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+                <div>
+                    <img class="object-cover object-center w-full h-64 rounded-t-lg lg:h-80" src="https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+    
+                    <div class="bg-white rounded-b-lg p-4 shadow-lg">
+    
+                        <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
+                            What do you want to know about UI
+                        </h1>
+    
+                        <p class="mt-2 text-gray-500 dark:text-gray-400">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi
+                            recusandae nulla veritatis id tempore sapiente
+                        </p>
+    
+                        <div class="pt-4 pb-2">
+                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
+                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
+                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div>
+                    <img class="object-cover object-center w-full h-64 rounded-t-lg lg:h-80" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+    
+                    <div class="bg-white rounded-b-lg p-4 shadow-lg">
+    
+                        <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
+                            All the features you want to know</h1>
+    
+                        <p class="mt-2 text-gray-500 dark:text-gray-400">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi
+                            recusandae nulla veritatis id tempore sapiente
+                        </p>
+    
+                        <div class="pt-4 pb-2">
+                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
+                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
+                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div>
+                    <img class="object-cover object-center w-full h-64 rounded-t-lg lg:h-80" src="https://images.unsplash.com/photo-1597534458220-9fb4969f2df5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="">
+    
+                    <div class="bg-white rounded-b-lg p-4 shadow-lg">
+                        <span class="text-blue-500 uppercase">category</span>
+    
+                        <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
+                            Which services you get from Meraki UI
+                        </h1>
+    
+                        <p class="mt-2 text-gray-500 dark:text-gray-400">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi
+                            recusandae nulla veritatis id tempore sapiente
+                        </p>
+    
+                        <div class="pt-4 pb-2">
+                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
+                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
+                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img class="object-cover object-center w-full h-64 rounded-t-lg lg:h-80" src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+    
+                    <div class="bg-white rounded-b-lg p-4 shadow-lg">
+                        <span class="text-blue-500 uppercase">category</span>
+    
+                        <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
+                            Which services you get from Meraki UI
+                        </h1>
+    
+                        <p class="mt-2 text-gray-500 dark:text-gray-400">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi
+                            recusandae nulla veritatis id tempore sapiente
+                        </p>
+    
+                        <div class="pt-4 pb-2">
+                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
+                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
+                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white dark:bg-gray-700">
+        <div class="container grid grid-cols-1 gap-10 px-6 py-12 mx-auto lg:grid-cols-3">
+            <div>
+                <p class="font-medium text-blue-500 dark:text-blue-400">Our locations</p>
+    
+                <h1 class="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">Visit our stores</h1>
+    
+                <p class="mt-3 text-gray-500 dark:text-gray-400">Find us at these locations.</p>
+            </div>
+    
+            <div class="grid grid-cols-1 gap-12 lg:col-span-2 sm:grid-cols-2">
+                <div>
+                    <h2 class="font-medium text-gray-800 dark:text-white">Melbourne</h2>
+                    <p class="mt-2 text-gray-500 dark:text-gray-400">100 Flinders Street <br> Melbourne VIC 3000 AU</p>
+                </div>
+    
+                <div>
+                    <h2 class="font-medium text-gray-800 dark:text-white">London</h2>
+                    <p class="mt-2 text-gray-500 dark:text-gray-400">100 Oxford Street <br> London W1D 1LL UK</p>
+                </div>
+    
+                <div>
+                    <h2 class="font-medium text-gray-800 dark:text-white">Sydney</h2>
+                    <p class="mt-2 text-gray-500 dark:text-gray-400">100 Flinders Street <br> Melbourne VIC 3000 AU</p>
+                </div>
+    
+                <div>
+                    <h2 class="font-medium text-gray-800 dark:text-white">San Francisco</h2>
+                    <p class="mt-2 text-gray-500 dark:text-gray-400">100 Flinders Street <br> Melbourne VIC 3000 AU</p>
+                </div>
+    
+                <div>
+                    <h2 class="font-medium text-gray-800 dark:text-white">Byron Bay</h2>
+                    <p class="mt-2 text-gray-500 dark:text-gray-400">100 Flinders Street <br> Melbourne VIC 3000 AU</p>
+                </div>
+    
+                <div>
+                    <h2 class="font-medium text-gray-700 dark:text-gray-200">Sweden</h2>
+                    <p class="mt-2 text-gray-500 dark:text-gray-400">100 Flinders Street <br> Melbourne VIC 3000 AU</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Custom Scripts -->
+    <script src="./js/app.js"></script>
+</body>
+</html>
