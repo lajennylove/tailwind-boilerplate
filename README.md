@@ -18,6 +18,11 @@ In addition, the boilerplate includes automatic image optimization and minificat
 
 Finally, you'll enjoy hot reloading on changes with BrowserSync, which allows you to see your changes instantly without having to manually reload your browser. With these features, this Tailwind CSS Boilerplate provides a powerful and efficient foundation for your web development projects.
 
+# VISIT THE BOILERPLATE
+
+Here you can visit the current boilerplate.
+https://lajennylove.github.io/tailwind-boilerplate/
+
 # HOW TO USE:
 
 1. clone the repo `git clone https://github.com/lajennylove/tailwind-boilerplate.git`
