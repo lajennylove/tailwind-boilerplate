@@ -39,6 +39,7 @@ https://lajennylove.github.io/tailwind-boilerplate/
 4. Then to start the project in your `npm start` or `yarn start` to start the live server
 5. Visit with your browser `http://localhost:3008` to view your project with hot reload support
 6. Open with your console the project using VS Code typing `code .` then open your `dist/index.html` and start coding
+7. To build to production you just need to do `npm build` or `yarn build` and all the CSS and JS files wil be minified.
 
 ## DIRECTORY STRUCTURE:
 
