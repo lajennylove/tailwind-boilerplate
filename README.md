@@ -12,18 +12,26 @@
 
 # TailwindCSS/VanillaJS/GulpJS boilerplate.
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://repository-images.githubusercontent.com/621943502/80cd6dcb-93a9-4352-a2bd-722aabab1452">
+    <source media="(prefers-color-scheme: light)" srcset="https://repository-images.githubusercontent.com/621943502/80cd6dcb-93a9-4352-a2bd-722aabab1452">
+    <img alt="Tailwind CSS boilerplate" src="https://repository-images.githubusercontent.com/621943502/80cd6dcb-93a9-4352-a2bd-722aabab1452" width="450" height="auto" style="max-width: 100%;">
+  </picture>
+</p>
+
 This Tailwind CSS Boilerplate provides an easy and efficient way to incorporate Tailwind CSS into your gulp workflow. The boilerplate includes support for transpiling your custom classes to the main app.css file with SASS, and allows you to unify all of your JavaScript libraries into just one app.js file that's compiled and minified.
 
 In addition, the boilerplate includes automatic image optimization and minification by dropping images into the ./src/img/ folder. We've also included the SVG Store library, which enables you to unify all of your SVGs into just one file that can be used with the <use> tag.
 
 Finally, you'll enjoy hot reloading on changes with BrowserSync, which allows you to see your changes instantly without having to manually reload your browser. With these features, this Tailwind CSS Boilerplate provides a powerful and efficient foundation for your web development projects.
 
-# VISIT THE BOILERPLATE
+## VISIT THE BOILERPLATE
 
 Here you can visit the current boilerplate.
 https://lajennylove.github.io/tailwind-boilerplate/
 
-# HOW TO USE:
+## HOW TO USE:
 
 1. clone the repo `git clone https://github.com/lajennylove/tailwind-boilerplate.git`
 2. `cd tailwind-boilerplate` to enter the project's folder
@@ -32,7 +40,7 @@ https://lajennylove.github.io/tailwind-boilerplate/
 5. Visit with your browser `http://localhost:3008` to view your project with hot reload support
 6. Open with your console the project using VS Code typing `code .` then open your `dist/index.html` and start coding
 
-# DIRECTORY STRUCTURE:
+## DIRECTORY STRUCTURE:
 
 ```
 tailwind-boilerplate/   # Base directory for your installation
@@ -49,6 +57,11 @@ tailwind-boilerplate/   # Base directory for your installation
 ├── package.json        # Your Node package admin file
 └── tailwind.config.js  # Here you can change the Tailwind CSS settings
 ```
+
+## ATTRIBUTIONS:
+
+To create this template I used elements from Meraki, you can visit his website here:
+https://merakiui.com/
 
 ✨ Happy coding! ✨
 
