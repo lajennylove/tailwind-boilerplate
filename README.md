@@ -71,9 +71,9 @@ To create this template I used the following resources:
 ## ABOUT THE PROJECT
 
 <p align="center">
-    ![GitHub](https://img.shields.io/github/license/lajennylove/tailwind-boilerplate)
-    ![GitHub repo size](https://img.shields.io/github/repo-size/lajennylove/tailwind-boilerplate)
-    ![GitHub Repo stars](https://img.shields.io/github/stars/lajennylove/tailwind-boilerplate?style=social)
+  <img src="https://img.shields.io/github/license/lajennylove/tailwind-boilerplate" alt="License">
+  <img src="https://img.shields.io/github/repo-size/lajennylove/tailwind-boilerplate" alt="Repo Size">
+  <img src="https://img.shields.io/github/stars/lajennylove/tailwind-boilerplate?style=social" alt="Stars">
 </p>
 
 ✨ Happy coding! ✨
