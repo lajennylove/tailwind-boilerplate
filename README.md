@@ -59,10 +59,22 @@ tailwind-boilerplate/   # Base directory for your installation
 └── tailwind.config.js  # Here you can change the Tailwind CSS settings
 ```
 
-## ATTRIBUTIONS:
+## Resources
 
-To create this template I used elements from Meraki, you can visit his website here:
-https://merakiui.com/
+To create this template I used the following resources:
+
+- [Meraki UI](https://merakiui.com/)
+- [Tailwind CSS](https://tailwindcss.com)
+- [Unsplash](https://unsplash.com)
+- [AlpineJS](https://alpinejs.dev)
+
+## ABOUT THE PROJECT
+
+<p align="center">
+    ![GitHub](https://img.shields.io/github/license/lajennylove/tailwind-boilerplate)
+    ![GitHub repo size](https://img.shields.io/github/repo-size/lajennylove/tailwind-boilerplate)
+    ![GitHub Repo stars](https://img.shields.io/github/stars/lajennylove/tailwind-boilerplate?style=social)
+</p>
 
 ✨ Happy coding! ✨
 
