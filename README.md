@@ -72,6 +72,9 @@ To create this template I used the following resources:
 - [Tailwind CSS](https://tailwindcss.com)
 - [Unsplash](https://unsplash.com)
 - [AlpineJS](https://alpinejs.dev)
+- [ShieldsIO](https://shields.io/)
+
+## Author comments
 
 ✨ Happy coding! ✨
 
