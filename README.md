@@ -8,6 +8,11 @@
   </a>
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/github/license/lajennylove/tailwind-boilerplate" alt="License">
+  <img src="https://img.shields.io/github/repo-size/lajennylove/tailwind-boilerplate" alt="Repo Size">
+  <img src="https://img.shields.io/github/stars/lajennylove/tailwind-boilerplate?style=social" alt="Stars">
+</p>
 ---
 
 # TailwindCSS/VanillaJS/GulpJS boilerplate.
@@ -67,14 +72,6 @@ To create this template I used the following resources:
 - [Tailwind CSS](https://tailwindcss.com)
 - [Unsplash](https://unsplash.com)
 - [AlpineJS](https://alpinejs.dev)
-
-## ABOUT THE PROJECT
-
-<p align="center">
-  <img src="https://img.shields.io/github/license/lajennylove/tailwind-boilerplate" alt="License">
-  <img src="https://img.shields.io/github/repo-size/lajennylove/tailwind-boilerplate" alt="Repo Size">
-  <img src="https://img.shields.io/github/stars/lajennylove/tailwind-boilerplate?style=social" alt="Stars">
-</p>
 
 ✨ Happy coding! ✨
 
