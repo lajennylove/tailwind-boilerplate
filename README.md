@@ -68,6 +68,7 @@ tailwind-boilerplate/   # Base directory for your installation
 
 To create this template I used the following resources:
 
+- [CreativDepot](https://github.com/stefansdev/creativdepot)
 - [Meraki UI](https://merakiui.com/)
 - [Tailwind CSS](https://tailwindcss.com)
 - [Unsplash](https://unsplash.com)
