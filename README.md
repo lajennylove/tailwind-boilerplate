@@ -68,7 +68,8 @@ tailwind-boilerplate/   # Base directory for your installation
 
 To create this template I used the following resources:
 
-- [CreativDepot](https://github.com/stefansdev/creativdepot)
+- [Stefan Stankovic](https://github.com/stefansdev/creativdepot)
+- [David Grzyb](https://github.com/davidgrzyb)
 - [Meraki UI](https://merakiui.com/)
 - [Tailwind CSS](https://tailwindcss.com)
 - [Unsplash](https://unsplash.com)
@@ -76,6 +77,10 @@ To create this template I used the following resources:
 - [ShieldsIO](https://shields.io/)
 
 ## Author comments
+
+I strongly recomend to delete all the body contents (besides the app.js at the bottom) and start following a video tutorial like the list I left below:
+
+- https://www.youtube.com/watch?v=L6Jwa7al8os&list=PLg9gWbGC0zdADkKA0sgkeoJiGSa9xwtoj
 
 ✨ Happy coding! ✨
 
