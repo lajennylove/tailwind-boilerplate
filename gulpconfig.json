@@ -25,7 +25,7 @@
 			"**/*.html"
 		],
 		"images": [
-			"src/img/**/*.{jpg,jpeg,png,gif}"
+			"src/img/**/*.{jpg,jpeg,png,gif,ico}"
 		],
 		"svg": [
 			"src/img/**/*.svg"
